@@ -1,4 +1,4 @@
-# Internal routing configuration to handle ESI
-#_internal:
-#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
-#    prefix:   /_internal
+sunshine_php_todo:
+    resource: "@SunshinePHPTodoBundle/Controller/"
+    type:     annotation
+    prefix:   /

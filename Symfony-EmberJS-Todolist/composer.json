@@ -1,23 +1,93 @@
 {
     "name": "dustinwhittle/symfony-emberjs-sunshinephp-2013",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Symfony EmberJS at SunshinePHP 2013",
+    "name": "dustinwhittle/webapp",
+    "description": "dustinwhittle.com",
+    "keywords": ["dustinwhittle"],
+    "homepage": "https://dustinwhittle.com/",
+    "type": "app",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dustin Whittle",
+            "email": "dustin.whittle@gmail.com",
+            "homepage": "https://dustinwhittle.com/"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/symfony",
+        "issues": "https://github.com/dustinwhittle/Symfony-EmberJS-SunshinePHP-2013/issues"
+    },
     "autoload": {
         "psr-0": { "": "src/" }
     },
+    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.3",
-        "symfony/symfony": "2.1.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "doctrine/doctrine-bundle": "1.0.*",
-        "twig/extensions": "1.0.*@dev",
-        "symfony/assetic-bundle": "2.1.*",
-        "symfony/swiftmailer-bundle": "2.1.*",
-        "symfony/monolog-bundle": "2.1.*",
-        "sensio/framework-extra-bundle": "2.1.*",
-        "sensio/generator-bundle": "2.1.*",
-        "jms/security-extra-bundle": "1.2.*",
-        "jms/di-extra-bundle": "1.1.*",
-        "kriswallsmith/assetic": "1.1.*@dev"
+
+        "php": ">=5.4.5",
+
+        "ext-apc": ">=3.1.12",
+        "ext-bz2": "*",
+        "ext-ctype": "*",
+        "ext-curl": "*",
+        "ext-date": "*",
+        "ext-fileinfo": "*",
+        "ext-filter": "*",
+        "ext-gd": "*",
+        "ext-intl": ">=1.1.0",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-pcre": "*",
+        "ext-pdo": "*",
+        "ext-Phar": ">=2.0.1",
+        "ext-posix": "*",
+        "ext-session": "*",
+        "ext-simplexml": "*",
+        "ext-spl": "*",
+        "ext-xml": "*",
+        "ext-xsl": "*",
+        "ext-zip": "*",
+        "ext-zlib": "*",
+
+        "monolog/monolog": "1.3.1",
+
+        "kriswallsmith/assetic": "dev-master",
+        "kriswallsmith/buzz": "dev-master",
+
+        "swiftmailer/swiftmailer": "dev-master",
+
+        "twig/twig": "dev-master",
+        "twig/extensions": "dev-master",
+
+        "symfony/symfony": "dev-master",
+        "symfony/swiftmailer-bundle": "dev-master",
+        "symfony/monolog-bundle": "dev-master",
+        "symfony/assetic-bundle": "dev-master",
+        "symfony/twig-bundle": "dev-master",
+
+        "doctrine/common": "2.3.x-dev",
+        "doctrine/dbal": "2.3.x-dev",
+        "doctrine/orm": "2.3.x-dev",
+        "doctrine/data-fixtures": "dev-master",
+        "doctrine/migrations": "dev-master",
+        "doctrine/doctrine-bundle": "1.2.x-dev",
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "doctrine/doctrine-migrations-bundle": "dev-master",
+
+        "gedmo/doctrine-extensions": "dev-master",
+        "stof/doctrine-extensions-bundle": "dev-master",
+
+        "jms/metadata": "1.1.1",
+        "jms/cg": "1.0.0",
+        "jms/aop-bundle": "dev-master",
+        "jms/security-extra-bundle": "dev-master",
+        "jms/di-extra-bundle": "dev-master",
+        "jms/serializer-bundle": "dev-master",
+
+        "sensio/framework-extra-bundle": "dev-master",
+        "sensio/generator-bundle": "dev-master",
+        "sensio/buzz-bundle": "dev-master"
+
     },
     "extra": {
         "symfony-app-dir": "app",

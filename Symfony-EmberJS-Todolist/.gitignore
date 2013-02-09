@@ -1,5 +1,6 @@
-/web/bundles/
-/app/cache/*
-/app/logs/*
-/vendor/
-/bin/
+web/bundles/*
+app/cache/*
+app/logs/*
+vendor/*
+bin/*
+.idea/*

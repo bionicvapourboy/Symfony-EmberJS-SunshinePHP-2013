@@ -59,11 +59,11 @@
         "twig/twig": "dev-master",
         "twig/extensions": "dev-master",
 
-        "symfony/symfony": "dev-master",
-        "symfony/swiftmailer-bundle": "dev-master",
-        "symfony/monolog-bundle": "dev-master",
-        "symfony/assetic-bundle": "dev-master",
-        "symfony/twig-bundle": "dev-master",
+        "symfony/symfony": "2.2.x-dev",
+        "symfony/swiftmailer-bundle": "2.2.x-dev",
+        "symfony/monolog-bundle": "2.2.x-dev",
+        "symfony/assetic-bundle": "2.1.x-dev",
+        "symfony/twig-bundle": "2.2.x-dev",
 
         "doctrine/common": "2.3.x-dev",
         "doctrine/dbal": "2.3.x-dev",
@@ -84,8 +84,8 @@
         "jms/di-extra-bundle": "dev-master",
         "jms/serializer-bundle": "dev-master",
 
-        "sensio/framework-extra-bundle": "dev-master",
-        "sensio/generator-bundle": "dev-master",
+        "sensio/framework-extra-bundle": "2.2.x-dev",
+        "sensio/generator-bundle": "2.2.x-dev",
         "sensio/buzz-bundle": "dev-master"
 
     },

@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}SunshinePHP{% endblock %}</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow, archive" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}" />
+
+    {% stylesheets filter='cssrewrite,?yui_css' output='common.css'
+        '@SunshinePHPTodoBundle/Resources/public/css/bootstrap.css'
+        '@SunshinePHPTodoBundle/Resources/public/css/common.css'
+    %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    {% block stylesheets %} {% endblock %}
+</head>
+<body id="sunshine">
+
+    <div id="content" class="container">
+        <div class="span12">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+
+{% javascripts filter='?yui_js' output='common.js'
+    '@SunshinePHPTodoBundle/Resources/public/js/jquery.js'
+    '@SunshinePHPTodoBundle/Resources/public/js/bootstrap.js'
+    '@SunshinePHPTodoBundle/Resources/public/js/handlebars.js'
+    '@SunshinePHPTodoBundle/Resources/public/js/ember.js'
+    '@SunshinePHPTodoBundle/Resources/public/js/ember-data.js'
+    '@SunshinePHPTodoBundle/Resources/public/js/common.js'
+%}
+<script type="text/javascript" src="{{ asset_url }}" charset="utf-8" defer></script>
+{% endjavascripts %}
+{% block javascripts %} {% endblock %}
+</body>
 </html>
